@@ -1,0 +1,81 @@
+    
+    
+    <!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Psiconect</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="slide.js" defer></script>
+</head>
+    
+    <header>
+        <div class="logoclass">
+            <a href="index.html">
+                <img src="images/PSICONECT-AZUL-CLARO-FUNDO-AZUL.png" class="logo" alt="Logo Psiconect">
+            </a>
+        </div>
+
+        <nav>
+            <a href='index.html' class="index-link">INÍCIO</a>
+            <a href='transtornos.html' class="index-link">TRANSTORNOS</a>
+            <a href='canais.html' class="index-link">CANAIS DE AJUDA</a>
+            <a href='sobre.html' class="index-link">SOBRE NÓS</a>
+        </nav>
+    </header>
+
+    <section class="slider">
+        <div class="slider-content">
+
+            <input type="radio" name="btn-carrosel" id="slide1">
+            <input type="radio" name="btn-carrosel" id="slide2">
+            <input type="radio" name="btn-carrosel" id="slide3">
+
+            <div class="slide-box primeiro">
+                <img src="./images/carrossel1.jpg" alt="banner1">
+            </div>
+
+            <div class="slide-box">
+                <img src="./images/carrossel2.jpg" alt="banner1">
+            </div>
+
+            <div class="slide-box">
+                <img src="./images/carrossel3.jpg" alt="banner1">
+            </div>
+            
+            <div class="nav-auto">
+                <div class="auto-btn1"></div>
+                <div class="auto-btn2"></div>
+                <div class="auto-btn3"></div>
+            </div>
+
+            <div class="nav-manual">
+                <label for="slide1" class="manual-btn"></label>
+                <label for="slide2" class="manual-btn"></label>
+                <label for="slide3" class="manual-btn"></label>
+            </div>
+
+        </div>
+    </section>  
+
+
+    header {
+    background-color: #17375F;
+    padding-bottom: 10px;
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    margin-bottom: 20px;
+    z-index: 1000000;
+}
+
+  <div class="container">
+    <div class="banner-container">
+      <img src="images/Banner2.jpg" class="banner baixo">
+    </div>
+  </div>
