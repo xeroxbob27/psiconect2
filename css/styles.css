@@ -396,4 +396,17 @@ h3 {
     align-items: center;
     background-color: #9dc8fd;
     margin-top: 15px;
+    border-radius: 15px;
+    padding: 10px;
+    font-family: 'parisine-bold';
+    width: 500px;
+}
+
+#titulo_contarhistoria{
+    margin-top: 10px;
+    text-align: center;
+    background-color: #17375F;
+    padding: 18px;
+    font-family: 'parisine-bold';
+    color: #9dc8fd;
 }
