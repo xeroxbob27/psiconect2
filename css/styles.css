@@ -214,7 +214,7 @@ h3 {
     width: calc(25% - 35px); 
 }
 
-.card-title {
+#card-canais {
     color: white;
     font-family: 'parisine-bold';
     font-size: 15px;
@@ -223,7 +223,7 @@ h3 {
     padding: 10px;
     border-radius: 20px;
     width: 101%; 
-    margin-left: -10%; 
+    margin-left: -7%; 
     position: absolute;
     top: -30px;    
 }
@@ -409,4 +409,13 @@ h3 {
     padding: 18px;
     font-family: 'parisine-bold';
     color: #9dc8fd;
+    
 }
+
+#card-chamada{
+    margin: 0 auto;
+    
+}
+
+
+
