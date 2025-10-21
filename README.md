@@ -6,7 +6,6 @@
 
 * **CAROLINA CARNEIRO SILVA**
 * **KELLEN CRISTINA PONCE CINTRA**
-* **THALES CARVALHO LANA** 
 * **GUILHERME HENRIQUE LOPES**.
 
 Nosso objetivo é **disponibilizar à população informações claras e acessíveis sobre transtornos mentais**, explicando cada um, suas ramificações e os canais de ajuda disponíveis.
