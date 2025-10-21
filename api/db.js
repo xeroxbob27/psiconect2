@@ -4,8 +4,9 @@ export const db = mysql.createConnection({
     host: "localhost",
     user: "root",
     password: "9230gui**",
-    database: "crud",
+    database: "psiconect",
 })
+
 
 
 // export const db = mysql.createConnection({

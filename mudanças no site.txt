@@ -1,0 +1,5 @@
+adicionar informações para o usuarios sobre lgpd
+informar que ela pode colocar o nome, apelido ou anonimo
+e aceitar os condições do site
+
+
