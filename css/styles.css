@@ -453,3 +453,7 @@ h3 {
 #botao-uso{
     text-align: center !important;
 }
+
+#marginbusca, #resultadodabusca{
+    margin-top: 10vh;
+}
