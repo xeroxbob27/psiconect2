@@ -400,8 +400,11 @@ h3 {
     margin-top: 15px;
     border-radius: 15px;
     padding: 10px;
-    font-family: 'parisine-bold';
     width: 500px;
+}
+
+#entreda_comentario_textos{
+    font-family: 'parisine-bold';
 }
 
 #titulo_contarhistoria{
@@ -439,6 +442,7 @@ h3 {
     color: red;
     font-weight: normal !important;
     font-style: italic;
+    text-align: center;
 }
 
 #termo{
