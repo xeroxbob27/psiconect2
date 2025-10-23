@@ -2,12 +2,12 @@
 <html lang="pt-br">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
-  <title>Psiconect</title>
-  <link rel="stylesheet" href="css/styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <title>Psiconect</title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <header>
     <nav class="navbar navbar-expand-lg bg-body-tertiary" style="margin-top: 0; padding: 0px;">
@@ -23,7 +23,8 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="./index.html" style="color: #9dc8fd;">Inicio</a>
+                        <a class="nav-link active" aria-current="page" href="./index.html"
+                            style="color: #9dc8fd;">Inicio</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link text-white" href="./canais.html" style="color: #9dc8fd;">Canais</a>
@@ -35,9 +36,13 @@
                         <a class="nav-link" href="./sobre.html" style="color: #9dc8fd;">Sobre o site</a>
                     </li>
                 </ul>
-                <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Busca" aria-label="search" />
-                    <button class="btn btn-outline-success" type="submit">Buscar</button>
+                <form class="d-flex" role="search" action="resultadobusca.html" method="get">
+                    <input class="form-control me-2" type="search" placeholder="Busca" aria-label="search" name="q"
+                        required />
+                    <button class="btn btn-outline-success" type="submit"
+                        style="background-color: #17375F; color: white;">
+                        Buscar
+                    </button>
                 </form>
             </div>
         </div>
@@ -94,7 +99,7 @@
 
 
         <div class="card-wrapper">
-            <h2 class="card-title" id="card-canais" >AUTISMO</h2>
+            <h2 class="card-title" id="card-canais">AUTISMO</h2>
             <section class="canal-card">
                 <ul class="canal-list">
                     <li><a href="https://www.ama.org.br/" target="_blank">https://www.ama.org.br/</a></li>
@@ -149,7 +154,11 @@
     <footer id="rodape">
         © Psiconect - Todos direitos reservados
     </footer>
+    <script src="./js/relatos-index.js"></script>
+    <script src="./js/motor-busca.js"></script>
 </body>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+    crossorigin="anonymous"></script>
 
 </html>

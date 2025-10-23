@@ -16,6 +16,8 @@ document.addEventListener("DOMContentLoaded", async () => {
 });
 
 
+
+
 document.getElementById("btnPublicar").addEventListener("click", async () => {
   let nome = document.getElementById("nome").value.trim();
   const email = document.getElementById("email").value.trim();
@@ -70,3 +72,13 @@ document.getElementById("btnPublicar").addEventListener("click", async () => {
     alert("Erro ao enviar relato. Verifique se o servidor está rodando!");
   }
 });
+
+const textarea = document.getElementById('relato');
+const contador = document.getElementById('contador');
+const max = textarea.getAttribute('maxlength');
+
+textarea.addEventListener('input', () => {
+  const length = textarea.value.length;
+  contador.textContent = `${length} / ${max} caracteres`;
+});
+

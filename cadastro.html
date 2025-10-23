@@ -38,10 +38,13 @@
                         <a class="nav-link" href="./sobre.html" style="color: #9dc8fd;">Sobre o site</a>
                     </li>
                 </ul>
-                <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Busca" aria-label="search" />
+                <form class="d-flex" role="search" action="resultadobusca.html" method="get">
+                    <input class="form-control me-2" type="search" placeholder="Busca" aria-label="search" name="q"
+                        required />
                     <button class="btn btn-outline-success" type="submit"
-                        style="background-color: #17375F;">Buscar</button>
+                        style="background-color: #17375F; color: white;">
+                        Buscar
+                    </button>
                 </form>
             </div>
         </div>
@@ -50,25 +53,30 @@
 
 <body id="pagina">
     <div class="container" id="entrada_comentario" style="border: 4px solid #17375F;">
-        <p style="text-align: center !important;" id="entreda_comentario_textos">Você pode compartilhar sua história de forma anônima - o nome é opcional e apelidos são bem-vindos!</p>
+        <p style="text-align: center !important;" id="entreda_comentario_textos">Você pode compartilhar sua história de
+            forma anônima - o nome é opcional e apelidos são bem-vindos!
+        </p>
+        <p id="obrigatorio"> Campos obrigatorios (*)</p>
         <div class="mb-3">
             <label for="nome" class="form-label" id="entreda_comentario_textos">Nome</label>
             <input type="text" class="form-control" id="nome" placeholder="Digite seu nome, apelido ou deixe em branco">
         </div>
         <div class="mb-3">
 
-            <label for="email" class="form-label" id="entreda_comentario_textos">Email</label>
+            <label for="email" class="form-label" id="entreda_comentario_textos">*Email</label>
             <input type="email" class="form-control" id="email" placeholder="name@example.com">
             <p id="alert"></p>
         </div>
         <div class="mb-3">
-            <label for="relato" class="form-label" id="entreda_comentario_textos">Conte-nos sua historia</label>
-            <textarea class="form-control" id="relato" rows="3" placeholder="Nos conte a sua historia"></textarea>
+            <label for="relato" class="form-label" id="entreda_comentario_textos">*Conte-nos sua historia</label>
+            <textarea class="form-control" id="relato" rows="5" maxlength="400"
+                placeholder="Nos conte a sua historia"></textarea>
+            <div class="form-text text-end" id="contador">0 / 400 caracteres</div>
             <p id="alert2" style="font-weight: normal;"></p>
         </div>
         <div class="mb-3">
 
-            <label for="selectDoenca" class="form-label" id="entreda_comentario_textos">Transtornos</label>
+            <label for="selectDoenca" class="form-label" id="entreda_comentario_textos">*Transtornos</label>
 
             <select id="selectDoenca" class="form-select" aria-label="Selecione um transtorno">
 
@@ -76,12 +84,15 @@
             </select>
             <p id="alert3"></p>
         </div>
-        <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="aceitaruso" id="aceitar-uso">
-            <label class="form-check-label" for="aceitar-uso">
-                Aceitar termos de uso - Para saber mais - <a href="termosdeuso.html">clique aqui</a>
-            </label>
-            <p id="alert4" style="font-weight: normal;"></p>
+        <div class="was-validated">
+            <div class="form-check mb-3">
+                <input type="checkbox" class="form-check-input" id="validationFormCheck1" required>
+                <label class="form-check-label" for="validationFormCheck1">Aceitar termos de uso - Para saber mais <a
+                        href="termosdeuso.html">clique aqui</a></label>
+                <!-- <div class="invalid-feedback">Aceito os termos para continuar</div> -->
+            </div>
+            <!-- <p id="alert4" style="font-weight: normal;"></p> -->
+
         </div>
         <br>
         <button type="button" class="btn btn-primary" id="btnPublicar">Publicar</button>
@@ -89,7 +100,7 @@
     </div>
 
     <script src="./js/receber-relatos.js"></script>
-
+    <script src="./js/relatos-index.js"></script>
 </body>
 
 <footer id="rodape">

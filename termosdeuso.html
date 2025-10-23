@@ -36,9 +36,13 @@
                         <a class="nav-link" href="./sobre.html" style="color: #9dc8fd;">Sobre o site</a>
                     </li>
                 </ul>
-                <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Busca" aria-label="search" />
-                    <button class="btn btn-outline-success" type="submit">Buscar</button>
+                <form class="d-flex" role="search" action="resultadobusca.html" method="get">
+                    <input class="form-control me-2" type="search" placeholder="Busca" aria-label="search" name="q"
+                        required />
+                    <button class="btn btn-outline-success" type="submit"
+                        style="background-color: #17375F; color: white;">
+                        Buscar
+                    </button>
                 </form>
             </div>
         </div>
@@ -210,7 +214,7 @@
     <div class="container" id="botao-uso">
         <a href="./cadastro.html" class="btn btn-primary">Voltar</a>
     </div>
-
+    <script src="./js/motor-busca.js"></script>
 </body>
 
 <footer id="rodape">
